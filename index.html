@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="asset/logo_pandaY.png" alt="">
+            <ul>
+                <li><a href="#" class="active">À propos</a></li>
+                <li><a href="#portfolio-loc">Portfolio</a></li>
+                <li><a href="#contact-loc">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing">
+            <div class="intro">
+                <h3>Je suis <Span>Yann BOLZER</Span><br>Étudiant ingénieur généraliste<br>Futur Data Engineer<br>Python / SQL / BI</h3>
+                <button>Me Contacter</button>
+            </div>
+            <div class="socials">
+                <div class="line"></div>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <a href="https://www.linkedin.com/in/yann-bolzer-670a99249/" target="_blank" rel="noopener">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+                <i class="ri-whatsapp-line"></i>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <h1>À propos</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>
+            Je suis <span class="hl">étudiant ingénieur généraliste</span> avec un fort intérêt pour la 
+            <span class="hl">data</span> et l’<span class="hl">ingénierie des pipelines ETL</span>.
+            </p>
+
+            <p>
+            J’aime collecter, structurer et fiabiliser les données pour qu’elles soient faciles à analyser :
+            API, web scraping, nettoyage, transformations avec <span class="hl">Python</span> et 
+            <span class="hl">SQL</span>, puis chargement dans des bases comme 
+            <span class="hl">PostgreSQL</span> ou <span class="hl">MySQL</span>.
+            </p>
+
+            <p>
+            Sur ce portfolio, tu trouveras plusieurs projets concrets (finance, météo, offres d’emploi, football)
+            qui montrent comment je vais de la source brute à la base prête pour la BI, notamment avec 
+            <span class="hl">Power BI</span>.
+            </p>
+
+            <p>
+            Je recherche aujourd’hui un <span class="hl">stage en data engineering</span> pour continuer à progresser au contact d’équipes expérimentées.
+            </p>
+        </div>
+    </section>
+    <section class="skills">
+        <h1>Mes Compétences</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="asset/python.svg" alt="Python">
+                <h2>Python</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/pandas.png" alt="Pandas">
+                <h2>Pandas</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/numpy.png" alt="NumPy">
+                <h2>NumPy</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/matplotlib.png" alt="Matplotlib">
+                <h2>Matplotlib</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/PostgreSQL.png" alt="PostgreSQL">
+                <h2>PostgreSQL</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/mysql.svg" alt="MySQL">
+                <h2>MySQL</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/mongodb.svg" alt="MongoDB">
+                <h2>MongoDB</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/power BI.png" alt="Power BI">
+                <h2>Power BI</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/docker.png" alt="Docker">
+                <h2>Docker</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/java.svg" alt="Java">
+                <h2>Java</h2>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Portfolio</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="asset/finance.jpeg" alt="">
+                <div class="overlay">
+                    <h3>ETL Finance Crypto</h3>
+                    <p>
+                        Pipeline ETL complet qui récupère les prix de cryptomonnaies (API CoinGecko),
+                        transforme les données (timestamps, variations 24h) et les charge dans PostgreSQL.
+                    </p>
+                    <button onclick="window.open('https://github.com/Asakura-db/etl-portfolio/blob/main/etl_finance.py', '_blank')">
+                        Voir le projet ->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/meteo.jpeg" alt="">
+                <div class="overlay">
+                    <h3>ETL Météo</h3>
+                    <p>
+                        Récupération des prévisions horaires via l'API Open-Meteo, agrégation journalière
+                        (min, max, moyenne, pluie) et stockage dans une table daily_weather.
+                    </p>
+                    <button onclick="window.open('https://github.com/Asakura-db/etl-portfolio/blob/main/etl_weather.py', '_blank')">
+                        Voir le projet ->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/jobs.jpeg" alt="">
+                <div class="overlay">
+                    <h3>ETL Offres d'emploi</h3>
+                    <p>
+                        Web scraping d'offres d'emploi, extraction des titres, entreprises, lieux et dates,
+                        nettoyage et chargement dans PostgreSQL pour analyser le marché de l'emploi.
+                    </p>
+                    <button onclick="window.open('https://github.com/Asakura-db/etl-portfolio/blob/main/etl_jobs_france.py', '_blank')">
+                        Voir le projet ->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/football.jpeg" alt="">
+                <div class="overlay">
+                    <h3>ETL Statistiques Football</h3>
+                    <p>
+                        Pipeline ETL pour récupérer des données de matchs de football, préparer les statistiques
+                        (buts, passes, expected goals, etc.) et les charger dans une base pour analyse.
+                    </p>
+                    <button onclick="window.open('https://github.com/Asakura-db/football_pipeline', '_blank')">
+                        Voir le projet ->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <h1>Experience</h1>
+        <div class="lighter-div">
+            <div class="exp">
+                <h2>Data / ETL Projects</h2>
+                <div class="exp-desc">
+                    <h3>Python, SQL, PostgreSQL</h3>
+                    <p>
+                    J’ai découvert Python à l’école à travers des travaux pratiques et mini-projets
+                    (utilisation de bibliothèques comme NumPy, Pandas ou Matplotlib), ainsi qu’un projet
+                    orienté objet en Java.
+                    </p>
+                    <p> 
+                    En parallèle, j’ai développé en autonomie les pipelines présentés dans ce portfolio :
+                    collecte de données (API, web scraping), nettoyage et transformations en Python,
+                    modélisation simple des tables, puis chargement dans une base <strong>PostgreSQL</strong>
+                    pour analyse et visualisation.
+                    </p>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>Autres expériences</h2>
+                <div class="exp-desc">
+                    <h3>Formations et auto-formations</h3>
+                    <p>
+                    Actuellement en école d’ingénieur généraliste, je développe des bases solides en mathématiques,
+                    algorithmique et programmation (dont un projet en <strong>Java</strong>).
+                    </p>
+                    <p>
+                    En complément de ma formation, je me forme en ligne, notamment sur la plateforme 
+                    <strong>Coursera</strong>, afin d’approfondir mes compétences en <strong>Python</strong>, 
+                    <strong>SQL</strong>, <strong>data engineering</strong> et en outils d’analyse de données. 
+                    Cela me permet de consolider ce que je vois en cours et de rester à jour sur les bonnes pratiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me" id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <!-- Email -->
+            <div class="contact-card">
+                <i class="ri-mail-line"></i>
+                <p>yann.bolzer33@gmail.com</p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-card">
+                <i class="ri-linkedin-fill"></i>
+                <p>
+                    <a href="https://www.linkedin.com/in/yann-bolzer-670a99249/"">
+                    Mon profil LinkedIn
+                </a>
+                </p>
+            </div>
+            <!-- Téléphone -->
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
+                <p>+33 6 19 32 23 30</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
