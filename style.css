@@ -523,7 +523,7 @@ img { max-width: 100%; height: auto; }
   .experience .lighter-div { padding: 7vh 48px; }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   header {
     background: none;
     padding: 16px 20px;
@@ -603,8 +603,8 @@ img { max-width: 100%; height: auto; }
   .contact-me { padding: 48px 20px; }
   .contact-me h1 { font-size: 36px; }
   .contact { flex-direction: column; gap: 12px; }
-  .contact-card { margin-top: 12px; }
-}
+  .contact-card { margin-top: 12px; } */
+/* } */
 
 @media (max-width: 480px) {
   .landing .intro h3 { font-size: 20px; }
@@ -620,8 +620,9 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 768px) {
   header {
-    background-image: none;
+    background: none !important;
     padding: 16px 20px;
+    height: auto;
   }
 
   .landing {
@@ -637,12 +638,12 @@ img { max-width: 100%; height: auto; }
   .intro button { margin-left: 0; }
 
   .hero-mobile {
-    display: block;
+    display: block !important;
     width: 85%;
     max-width: 420px;
     margin: 8px auto 0;
     height: auto;
-    border-radius: 12px; 
+    border-radius: 12px;
   }
 
   .about { padding-top: 24px; }
