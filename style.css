@@ -27,6 +27,8 @@ header {
   width: 100vw;
 }
 
+.hero-mobile { display: none; }
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -521,7 +523,6 @@ img { max-width: 100%; height: auto; }
   .experience .lighter-div { padding: 7vh 48px; }
 }
 
-/* --- Mobile (≤ 768px) --- */
 @media (max-width: 768px) {
   header {
     padding: 16px 20px;
@@ -530,7 +531,7 @@ img { max-width: 100%; height: auto; }
   }
 
   header nav {
-    position: static; $
+    position: static;
     width: 100%;
     margin-bottom: 12px;
   }
@@ -616,4 +617,34 @@ img { max-width: 100%; height: auto; }
   .portfolio-card .overlay {
     height: 62vw;
   }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: none;
+    padding: 16px 20px;
+  }
+
+  .landing {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 10vh 0 4vh;
+  }
+
+  .landing .intro h3 { margin-left: 0; font-size: 24px; }
+  .landing .intro h3 span { font-size: 2.2rem; }
+  .intro button { margin-left: 0; }
+
+  .hero-mobile {
+    display: block;
+    width: 85%;
+    max-width: 420px;
+    margin: 8px auto 0;
+    height: auto;
+    border-radius: 12px; 
+  }
+
+  .about { padding-top: 24px; }
 }
