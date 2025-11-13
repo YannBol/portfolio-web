@@ -525,9 +525,8 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 768px) {
   header {
+    background: none;
     padding: 16px 20px;
-    background-position: center top;
-    background-size: 70%; 
   }
 
   header nav {
